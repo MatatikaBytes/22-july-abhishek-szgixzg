@@ -16,6 +16,9 @@ plugins:
   - name: tap-surveymonkey-privateapp
     variant: meltanolabs
     pip_url: git+https://github.com/MeltanoLabs/tap-surveymonkey.git@v0.1.0
+  - name: tap-linkedin-ads
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-linkedin-ads.git@v0.1.0
   loaders:
   - name: target-postgres
     variant: matatika
@@ -23,6 +26,9 @@ plugins:
   - name: target-clickhouse
     variant: meltanolabs
     pip_url: "'target-clickhouse @ git+https://github.com/MeltanoLabs/target-clickhouse.git@v0.3.2'"
+  - name: target-snowflake
+    variant: meltanolabs
+    pip_url: meltanolabs-target-snowflake==0.20.2
   transformers:
   - name: dbt
     variant: dbt-labs
