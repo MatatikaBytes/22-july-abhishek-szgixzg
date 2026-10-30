@@ -1,0 +1,9 @@
+version: pipelines/v0.1
+type: INGESTION
+label: Weekly road fuel price
+schedule: '@daily'
+timeout: 3600
+max_retries: 0
+data_components:
+- tap-govuk-weekly-road-fuel-prices--weekly-road-fuel-price
+- Warehouse
