@@ -67,7 +67,8 @@ recorded here.
 ### SurveyMonkey (Private App) (`surveymonkey-(private-app)`)
 
 - **Type:** WORKFLOW
-- **Schedule:** none
+- **Schedule:** `@hourly`
+- **Triggered by:** `surveymonkey`
 - **Data components:** `tap-surveymonkey-privateapp` (tap-surveymonkey-privateapp, meltanolabs) → `Warehouse` (target-postgres, matatika) → `dbt` (dbt, dbt-labs)
 - **Timeout:** none
 - **Max retries:** 0

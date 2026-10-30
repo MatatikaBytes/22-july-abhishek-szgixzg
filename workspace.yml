@@ -1,7 +1,6 @@
 version: workspaces/v0.2
 app_properties:
   WELCOME_DATASET_ALIAS: welcome
-disable_pipeline_schedules: true
 default_data_store: Warehouse
 state_data_store: Warehouse
 dataset_paths:
