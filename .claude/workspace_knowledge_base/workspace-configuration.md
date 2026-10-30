@@ -13,7 +13,7 @@ recorded here.
 ## Settings
 
 - **Name:** 22 july abhishek
-- **Default environment:** dev
+- **Default environment:** prod
 - **Default data store:** Warehouse
 - **State data store:** Warehouse
 
