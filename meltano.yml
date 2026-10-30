@@ -59,3 +59,5 @@ plugins:
   - name: dbt-artifacts
     variant: matatika
     pip_url: git+https://github.com/Matatika/dbt-artifacts-ext.git@v0.1.0
+include_paths:
+- extractors/*.yml

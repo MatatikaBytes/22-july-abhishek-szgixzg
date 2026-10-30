@@ -76,3 +76,11 @@ recorded here.
 - **Timeout:** none
 - **Max retries:** 0
 
+### Weekly road fuel prices (`weekly-road-fuel-prices`)
+
+- **Type:** INGESTION
+- **Schedule:** `@daily`
+- **Data components:** `tap-govuk-weekly-road-fuel-prices--weekly-road-fuel-prices` (tap-govuk-weekly-road-fuel-prices, matatika) → `Warehouse` (target-postgres, matatika)
+- **Timeout:** 3600s
+- **Max retries:** 0
+
