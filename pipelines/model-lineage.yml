@@ -1,6 +1,7 @@
 version: pipelines/v0.1
 type: WORKFLOW
 label: Model Lineage
+schedule: '@hourly'
 timeout: 0
 max_retries: 0
 data_components:

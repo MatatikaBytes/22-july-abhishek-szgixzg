@@ -50,7 +50,7 @@ recorded here.
 ### Model Lineage (`model-lineage`)
 
 - **Type:** WORKFLOW
-- **Schedule:** none
+- **Schedule:** `@hourly`
 - **Data components:** `dbt` (dbt, dbt-labs) → `dbt-artifacts` (dbt-artifacts, matatika) → `matatika` (matatika, matatika)
 - **Actions:** `dbt:deps`, `dbt:docs-generate`, `dbt-artifacts:convert-matatika`, `matatika:publish`
 - **Timeout:** none
