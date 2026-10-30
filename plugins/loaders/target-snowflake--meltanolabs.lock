@@ -20,27 +20,27 @@
     "structured-logging",
     "validate-records"
   ],
-  "settings_group_validation": [
-    [
-      "account",
-      "database",
-      "password",
-      "user"
-    ]
-  ],
   "settings": [
     {
       "name": "account",
       "kind": "string",
       "label": "Account",
-      "description": "Your account identifier. See [Account Identifiers](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html)."
+      "description": "Your account identifier. See [Account Identifiers](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html).",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "add_record_metadata",
       "kind": "boolean",
       "value": true,
       "label": "Add Record Metadata",
-      "description": "Whether to add metadata columns."
+      "description": "Whether to add metadata columns.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "batch_config.encoding.compression",
@@ -56,93 +56,153 @@
           "label": "None",
           "value": "none"
         }
-      ]
+      ],
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "batch_config.encoding.format",
       "kind": "string",
       "label": "Batch Encoding Format",
-      "description": "Format to use for batch files."
+      "description": "Format to use for batch files.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "batch_config.storage.prefix",
       "kind": "string",
       "label": "Batch Storage Prefix",
-      "description": "Prefix to use when writing batch files."
+      "description": "Prefix to use when writing batch files.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "batch_config.storage.root",
       "kind": "string",
       "label": "Batch Storage Root",
-      "description": "Root path to use when writing batch files."
+      "description": "Root path to use when writing batch files.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "batch_size_rows",
       "kind": "integer",
       "label": "Batch Size Rows",
-      "description": "Maximum number of rows in each batch."
+      "description": "Maximum number of rows in each batch.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "clean_up_batch_files",
       "kind": "boolean",
       "value": true,
       "label": "Clean Up Batch Files",
-      "description": "Whether to remove batch files after processing."
+      "description": "Whether to remove batch files after processing.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "database",
       "kind": "string",
       "label": "Database",
-      "description": "The initial database for the Snowflake session."
+      "description": "The initial database for the Snowflake session.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "default_target_schema",
       "kind": "string",
       "label": "Default Target Schema",
-      "description": "The default target database schema name to use for all streams."
+      "description": "The default target database schema name to use for all streams.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "faker_config.locale",
       "kind": "array",
       "label": "Faker Locale",
-      "description": "One or more LCID locale strings to produce localized output for: https://faker.readthedocs.io/en/master/#localization"
+      "description": "One or more LCID locale strings to produce localized output for: https://faker.readthedocs.io/en/master/#localization",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "faker_config.seed",
       "kind": "string",
       "label": "Faker Seed",
-      "description": "Value to seed the Faker generator for deterministic output: https://faker.readthedocs.io/en/master/#seeding-the-generator"
+      "description": "Value to seed the Faker generator for deterministic output: https://faker.readthedocs.io/en/master/#seeding-the-generator",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "flattening_enabled",
       "kind": "boolean",
       "label": "Enable Schema Flattening",
-      "description": "'True' to enable schema flattening and automatically expand nested properties."
+      "description": "'True' to enable schema flattening and automatically expand nested properties.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "flattening_max_depth",
       "kind": "integer",
       "label": "Max Flattening Depth",
-      "description": "The max depth to flatten schemas."
+      "description": "The max depth to flatten schemas.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "flattening_max_key_length",
       "kind": "integer",
       "label": "Max Key Length",
-      "description": "The maximum length of a flattened key."
+      "description": "The maximum length of a flattened key.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "flattening_separator",
       "kind": "string",
       "label": "Flattening Separator",
-      "description": "The separator to use when flattening keys."
+      "description": "The separator to use when flattening keys.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "hard_delete",
       "kind": "boolean",
       "value": false,
       "label": "Hard Delete",
-      "description": "Hard delete records."
+      "description": "Hard delete records.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "ingestion_method",
@@ -159,7 +219,11 @@
           "label": "Snowpipe Streaming",
           "value": "snowpipe_streaming"
         }
-      ]
+      ],
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "load_method",
@@ -180,87 +244,134 @@
           "label": "Overwrite",
           "value": "overwrite"
         }
-      ]
+      ],
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "normalise_casing",
       "kind": "boolean",
       "value": false,
       "label": "Normalise Casing",
-      "description": "Whether to normalise identifiers into snake_case."
+      "description": "Whether to normalise identifiers into snake_case.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "oauth_access_token",
       "kind": "string",
       "label": "OAuth Access Token",
       "description": "OAuth access token for authentication. Token should be valid and not expired.",
-      "sensitive": true
+      "hidden": false,
+      "sensitive": true,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "password",
       "kind": "string",
       "label": "Password",
       "description": "The password for your Snowflake user.",
-      "sensitive": true
+      "hidden": false,
+      "sensitive": true,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "private_key",
       "kind": "string",
       "label": "Private Key",
       "description": "The private key contents, in PEM or base64-encoding format. For KeyPair authentication either `private_key` or `private_key_path` must be provided.",
-      "sensitive": true
+      "hidden": false,
+      "sensitive": true,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "private_key_passphrase",
       "kind": "string",
       "label": "Private Key Passphrase",
       "description": "Passphrase to decrypt private key if encrypted.",
-      "sensitive": true
+      "hidden": false,
+      "sensitive": true,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "private_key_path",
       "kind": "string",
       "label": "Private Key Path",
       "description": "Path to file containing private key. For KeyPair authentication either private_key or private_key_path must be provided.",
-      "sensitive": true
+      "hidden": false,
+      "sensitive": true,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "process_activate_version_messages",
       "kind": "boolean",
       "value": true,
       "label": "Process `ACTIVATE_VERSION` messages",
-      "description": "Whether to process `ACTIVATE_VERSION` messages."
+      "description": "Whether to process `ACTIVATE_VERSION` messages.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "quoted_identifiers_ignore_case",
       "kind": "boolean",
       "value": true,
       "label": "Quoted IDentifiers Ignore Case",
-      "description": "Whether letters in double-quoted object identifiers are stored and resolved as uppercase letters."
+      "description": "Whether letters in double-quoted object identifiers are stored and resolved as uppercase letters.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "role",
       "kind": "string",
       "label": "Role",
-      "description": "The initial role for the session."
+      "description": "The initial role for the session.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "schema",
       "kind": "string",
       "label": "Schema",
-      "description": "The initial schema for the Snowflake session."
+      "description": "The initial schema for the Snowflake session.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "stream_map_config",
       "kind": "object",
       "label": "User Stream Map Configuration",
-      "description": "User-defined config values to be used within map expressions."
+      "description": "User-defined config values to be used within map expressions.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "stream_maps",
       "kind": "object",
       "label": "Stream Maps",
-      "description": "Config object for stream maps capability. For more information check out [Stream Maps](https://sdk.meltano.com/en/latest/stream_maps.html)."
+      "description": "Config object for stream maps capability. For more information check out [Stream Maps](https://sdk.meltano.com/en/latest/stream_maps.html).",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "timestamp_type",
@@ -281,27 +392,43 @@
           "label": "Timestamp Ntz",
           "value": "TIMESTAMP_NTZ"
         }
-      ]
+      ],
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "use_browser_authentication",
       "kind": "boolean",
       "value": false,
       "label": "Use Browser Authentication",
-      "description": "Whether to use SSO authentication using an external browser."
+      "description": "Whether to use SSO authentication using an external browser.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "use_raw_stream_names",
       "kind": "boolean",
       "value": false,
       "label": "Use Raw Stream Names",
-      "description": "Whether to use raw stream names as table names instead of informal Singer convention as last hyphen-separated part of stream name."
+      "description": "Whether to use raw stream names as table names instead of informal Singer convention as last hyphen-separated part of stream name.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "user",
       "kind": "string",
       "label": "User",
-      "description": "The login name for your Snowflake user."
+      "description": "The login name for your Snowflake user.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "uuid_format",
@@ -309,27 +436,31 @@
       "value": "native",
       "label": "Uuid Format",
       "description": "Snowflake column type/value format for `format: uuid` string properties. 'native' (default) uses SQLAlchemy's native UUID type, which compiles to CHAR(32) on Snowflake and strips dashes from the value. 'string' uses a STRING(36) column and writes the value as-is, preserving dashes.",
-      "sensitive": true
+      "hidden": false,
+      "sensitive": true,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "validate_records",
       "kind": "boolean",
       "value": true,
       "label": "Validate Records",
-      "description": "Whether to validate the schema of the incoming streams."
+      "description": "Whether to validate the schema of the incoming streams.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     },
     {
       "name": "warehouse",
       "kind": "string",
       "label": "Warehouse",
-      "description": "The initial warehouse for the session."
+      "description": "The initial warehouse for the session.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
     }
-  ],
-  "supported_python_versions": [
-    "3.10",
-    "3.11",
-    "3.12",
-    "3.13",
-    "3.14"
   ]
 }

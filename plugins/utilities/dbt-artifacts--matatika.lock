@@ -57,13 +57,13 @@
     }
   ],
   "commands": {
-    "convert-mermaid": {
-      "args": "convert --format mermaid",
-      "description": "Convert artifacts to [Mermaid entity relationship diagrams](https://mermaid.js.org/syntax/entityRelationshipDiagram.html)."
-    },
     "convert-matatika": {
       "args": "convert --format matatika",
       "description": "Convert artifacts to Matatika datasets."
+    },
+    "convert-mermaid": {
+      "args": "convert --format mermaid",
+      "description": "Convert artifacts to [Mermaid entity relationship diagrams](https://mermaid.js.org/syntax/entityRelationshipDiagram.html)."
     }
   }
 }

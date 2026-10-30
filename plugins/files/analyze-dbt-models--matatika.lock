@@ -9,20 +9,20 @@
   "description": "Instant insights on lineage of your dbt models.",
   "logo_url": "/assets/images/transformer/dbt.png",
   "requires": {
-    "utilities": [
-      {
-        "name": "matatika",
-        "variant": "matatika"
-      },
-      {
-        "name": "dbt-artifacts",
-        "variant": "matatika"
-      }
-    ],
     "transformers": [
       {
         "name": "dbt",
         "variant": "dbt-labs"
+      }
+    ],
+    "utilities": [
+      {
+        "name": "dbt-artifacts",
+        "variant": "matatika"
+      },
+      {
+        "name": "matatika",
+        "variant": "matatika"
       }
     ]
   }

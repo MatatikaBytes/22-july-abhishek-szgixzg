@@ -1,4 +1,5 @@
 version: pipelines/v0.1
+type: WORKFLOW
 label: Model Lineage
 timeout: 0
 max_retries: 0
