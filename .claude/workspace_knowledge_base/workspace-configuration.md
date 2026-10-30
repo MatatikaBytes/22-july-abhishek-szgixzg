@@ -25,6 +25,7 @@ recorded here.
 
 ## Plugins
 
+- extractor `tap-govuk-weekly-road-fuel-prices` (matatika) — `git+https://github.com/Matatika/tap-spreadsheets-anywhere.git@v0.7.2`
 - extractor `tap-linkedin-ads` (meltanolabs) — `git+https://github.com/MeltanoLabs/tap-linkedin-ads.git`
 - extractor `tap-linkedin-ads` (matatika) — `git+https://github.com/Matatika/tap-linkedin-ads.git`
 - extractor `tap-surveymonkey` (meltanolabs) — `git+https://github.com/MeltanoLabs/tap-surveymonkey.git@v0.1.0`
