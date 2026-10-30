@@ -13,18 +13,20 @@ recorded here.
 ## Settings
 
 - **Name:** 22 july abhishek
-- **Default environment:** prod
+- **Default environment:** dev
 - **Default data store:** Warehouse
 - **State data store:** Warehouse
 
 ## Data stores
 
 - `Snowflake` (target-snowflake, meltanolabs)
+- `Snowflake` (target-snowflake, meltanolabs)
 - `Warehouse` (target-postgres, matatika)
 
 ## Plugins
 
 - extractor `tap-linkedin-ads` (meltanolabs) — `git+https://github.com/MeltanoLabs/tap-linkedin-ads.git`
+- extractor `tap-linkedin-ads` (matatika) — `git+https://github.com/Matatika/tap-linkedin-ads.git`
 - extractor `tap-surveymonkey` (meltanolabs) — `git+https://github.com/MeltanoLabs/tap-surveymonkey.git@v0.1.0`
 - extractor `tap-surveymonkey-privateapp` (meltanolabs) — `git+https://github.com/MeltanoLabs/tap-surveymonkey.git@v0.1.0`
 - extractor `tap-zendesk` (meltanolabs) — `git+https://github.com/MeltanoLabs/tap-zendesk@v0.1.0`
