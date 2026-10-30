@@ -42,7 +42,7 @@ recorded here.
 ### LinkedIn Ads (`linkedin-ads`)
 
 - **Type:** WORKFLOW
-- **Schedule:** none
+- **Schedule:** `@hourly`
 - **Data components:** `tap-linkedin-ads` (tap-linkedin-ads, meltanolabs) → `Snowflake` (target-snowflake, meltanolabs)
 - **Timeout:** none
 - **Max retries:** 0
