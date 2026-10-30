@@ -81,6 +81,7 @@ recorded here.
 - **Type:** INGESTION
 - **Schedule:** `@daily`
 - **Data components:** `tap-govuk-weekly-road-fuel-prices--weekly-road-fuel-prices` (tap-govuk-weekly-road-fuel-prices, matatika) → `Warehouse` (target-postgres, matatika)
+- **Tables loaded:** `analytics.weekly_fuel_prices`, `analytics.weekly_fuel_prices_2003_to_2017`
 - **Timeout:** 3600s
 - **Max retries:** 0
 
